@@ -27,8 +27,4 @@ RUN ./configure \
     && make \
     && make install
 
-WORKDIR /root
-COPY launcher.py /launcher.py
-RUN chmod +x /launcher.py
-
-ENTRYPOINT ["/launcher.py"]
+ENTRYPOINT ["hping3"]
